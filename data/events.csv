@@ -1,0 +1,19 @@
+event_id,timestamp,type,entity_id,description,source_doc,location
+EV-TXN001,2023-10-25 10:15:00,payment,E002,Amit Sharma sent INR 15000.0 to Kirana Store via upi; status SUCCESS,bank_upi_transactions.csv,
+EV-TXN002,2023-10-25 11:20:00,payment,E001,Rajesh Kumar sent INR 5000.0 to Amit Sharma via imps; status SUCCESS,bank_upi_transactions.csv,
+EV-TXN003,2023-10-25 14:05:00,payment,E004,Amit Sharma sent INR 1250.0 to Paytm-Vendor-99 via upi; status FAILED,bank_upi_transactions.csv,
+EV-TXN003-FLAG,2023-10-25 14:05:00,complaint,E001,Flagged transaction: FAILED; sender Amit Sharma,bank_upi_transactions.csv,
+EV-TXN004,2023-10-26 09:30:00,payment,E003,Priya Patel sent INR 50000.0 to Rajesh Kumar via neft; status SUCCESS,bank_upi_transactions.csv,
+EV-TXN005,2023-10-26 16:45:00,payment,E001,Unknown Sender sent INR 100000.0 to Amit Sharma via upi; status SUCCESS,bank_upi_transactions.csv,
+EV-TXN005-FLAG,2023-10-26 16:45:00,complaint,E006,Flagged transaction: SUCCESS; sender Unknown Sender,bank_upi_transactions.csv,
+EV-CHAT-001,2023-10-25T10:12:00Z,chat,E007,I am sending the payment of ₹15000 now.,chat_export.json#1,
+EV-CHAT-002,2023-10-25T11:18:00Z,chat,E008,Received. Sending back your ₹5000 change.,chat_export.json#2,
+EV-CHAT-003,2023-10-26T09:28:00Z,chat,E009,Can you transfer the budget to Rajesh?,chat_export.json#3,
+EV-IP-001,2023-10-25 10:14:55,device_login,E010,Amit Sharma logged in from 103.241.12.45 using Android,ip_logs.csv#2,
+EV-IP-002,2023-10-25 11:19:40,device_login,E011,Rajesh Kumar logged in from 115.240.99.12 using Windows,ip_logs.csv#3,
+EV-IP-003,2023-10-25 14:04:10,device_login,E010,Amit Sharma logged in from 103.241.12.45 using Android,ip_logs.csv#4,
+EV-IP-004,2023-10-26 09:29:15,device_login,E012,Priya Patel logged in from 117.200.45.89 using macOS,ip_logs.csv#5,
+EV-CCTV-001,2023-10-25 10:13:00,complaint,E013,Person Entry at Main Entrance (confidence 0.95),cctv_metadata.csv#2,Main Entrance
+EV-CCTV-002,2023-10-25 11:21:00,complaint,E014,Person Exit at Back Alley (confidence 0.88),cctv_metadata.csv#3,Back Alley
+EV-CCTV-003,2023-10-25 14:06:00,complaint,E013,Person Entry at Main Entrance (confidence 0.92),cctv_metadata.csv#4,Main Entrance
+EV-CCTV-004,2023-10-26 16:44:00,complaint,E015,Loitering at Lobby (confidence 0.75),cctv_metadata.csv#5,Lobby

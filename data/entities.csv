@@ -1,0 +1,16 @@
+entity_id,type,value,label,source_doc,role,location
+E001,account,ACCT-AMITSHARMA,Amit Sharma Account,bank_upi_transactions.csv,unknown,
+E002,account,ACCT-KIRANASTORE,Kirana Store Account,bank_upi_transactions.csv,unknown,
+E003,account,ACCT-RAJESHKUMAR,Rajesh Kumar Account,bank_upi_transactions.csv,unknown,
+E004,account,ACCT-PAYTM-VENDOR-99,Paytm-Vendor-99 Account,bank_upi_transactions.csv,unknown,
+E005,account,ACCT-PRIYAPATEL,Priya Patel Account,bank_upi_transactions.csv,unknown,
+E006,account,ACCT-UNKNOWNSENDER,Unknown Sender Account,bank_upi_transactions.csv,unknown,
+E007,person,Amit Sharma,Amit Sharma,chat_export.json,unknown,
+E008,person,Rajesh Kumar,Rajesh Kumar,chat_export.json,unknown,
+E009,person,Priya Patel,Priya Patel,chat_export.json,unknown,
+E010,ip,103.241.12.45,103.241.12.45,ip_logs.csv,unknown,
+E011,ip,115.240.99.12,115.240.99.12,ip_logs.csv,unknown,
+E012,ip,117.200.45.89,117.200.45.89,ip_logs.csv,unknown,
+E013,device,CAM-01,CAM-01,cctv_metadata.csv,unknown,Main Entrance
+E014,device,CAM-02,CAM-02,cctv_metadata.csv,unknown,Back Alley
+E015,device,CAM-03,CAM-03,cctv_metadata.csv,unknown,Lobby

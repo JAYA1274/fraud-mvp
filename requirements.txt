@@ -1,0 +1,6 @@
+pandas
+rapidfuzz
+networkx
+streamlit
+plotly
+pyvis

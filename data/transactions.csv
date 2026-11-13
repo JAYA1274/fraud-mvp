@@ -1,0 +1,6 @@
+txn_id,from_acct,to_acct,amount,timestamp,channel,location,source_doc
+TXN001,E001,E002,15000.0,2023-10-25 10:15:00,upi,,bank_upi_transactions.csv
+TXN002,E003,E001,5000.0,2023-10-25 11:20:00,imps,,bank_upi_transactions.csv
+TXN003,E001,E004,1250.0,2023-10-25 14:05:00,upi,,bank_upi_transactions.csv
+TXN004,E005,E003,50000.0,2023-10-26 09:30:00,neft,,bank_upi_transactions.csv
+TXN005,E006,E001,100000.0,2023-10-26 16:45:00,upi,,bank_upi_transactions.csv

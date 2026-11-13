@@ -1,0 +1,5 @@
+link_id,entity_a,entity_b,link_type,evidence_ref,confidence
+L001,E007,E010,same_ip,ip_logs.csv#2,0.95
+L002,E008,E011,same_ip,ip_logs.csv#3,0.95
+L003,E007,E010,same_ip,ip_logs.csv#4,0.95
+L004,E009,E012,same_ip,ip_logs.csv#5,0.95
