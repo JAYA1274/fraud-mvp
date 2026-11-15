@@ -4,3 +4,5 @@ networkx
 streamlit
 plotly
 pyvis
+networkx
+scipy

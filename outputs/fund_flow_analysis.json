@@ -1,0 +1,123 @@
+{
+  "circular_fund_flows": [],
+  "fund_flow_paths": [
+    {
+      "source": "E005",
+      "target": "E001",
+      "path": [
+        "E005",
+        "E003",
+        "E001"
+      ],
+      "transfer_hops": 2,
+      "total_amount": 55000.0,
+      "hop_details": [
+        {
+          "from_account": "E005",
+          "to_account": "E003",
+          "amount": 50000.0,
+          "transaction_count": 1,
+          "timestamps": [
+            "2023-10-26T09:30:00+00:00"
+          ],
+          "channel": "neft",
+          "evidence_refs": [
+            ""
+          ]
+        },
+        {
+          "from_account": "E003",
+          "to_account": "E001",
+          "amount": 5000.0,
+          "transaction_count": 1,
+          "timestamps": [
+            "2023-10-25T11:20:00+00:00"
+          ],
+          "channel": "imps",
+          "evidence_refs": [
+            ""
+          ]
+        }
+      ],
+      "layering_risk": "medium"
+    },
+    {
+      "source": "E006",
+      "target": "E001",
+      "path": [
+        "E006",
+        "E001"
+      ],
+      "transfer_hops": 1,
+      "total_amount": 100000.0,
+      "hop_details": [
+        {
+          "from_account": "E006",
+          "to_account": "E001",
+          "amount": 100000.0,
+          "transaction_count": 1,
+          "timestamps": [
+            "2023-10-26T16:45:00+00:00"
+          ],
+          "channel": "upi",
+          "evidence_refs": [
+            ""
+          ]
+        }
+      ],
+      "layering_risk": "low"
+    },
+    {
+      "source": "E005",
+      "target": "E003",
+      "path": [
+        "E005",
+        "E003"
+      ],
+      "transfer_hops": 1,
+      "total_amount": 50000.0,
+      "hop_details": [
+        {
+          "from_account": "E005",
+          "to_account": "E003",
+          "amount": 50000.0,
+          "transaction_count": 1,
+          "timestamps": [
+            "2023-10-26T09:30:00+00:00"
+          ],
+          "channel": "neft",
+          "evidence_refs": [
+            ""
+          ]
+        }
+      ],
+      "layering_risk": "low"
+    },
+    {
+      "source": "E003",
+      "target": "E001",
+      "path": [
+        "E003",
+        "E001"
+      ],
+      "transfer_hops": 1,
+      "total_amount": 5000.0,
+      "hop_details": [
+        {
+          "from_account": "E003",
+          "to_account": "E001",
+          "amount": 5000.0,
+          "transaction_count": 1,
+          "timestamps": [
+            "2023-10-25T11:20:00+00:00"
+          ],
+          "channel": "imps",
+          "evidence_refs": [
+            ""
+          ]
+        }
+      ],
+      "layering_risk": "low"
+    }
+  ]
+}

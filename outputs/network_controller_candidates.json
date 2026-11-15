@@ -1,0 +1,481 @@
+[
+  {
+    "entity_id": "E001",
+    "label": "Amit Sharma Account",
+    "role": "unknown",
+    "controller_score": 0.2659,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.033,
+    "pagerank": 0.1442,
+    "account_risk_score": 0.3798,
+    "financial_metrics": {
+      "inflow": 105000.0,
+      "outflow": 16250.0,
+      "pass_through_ratio": 0.1548,
+      "incoming_count": 2,
+      "outgoing_count": 2,
+      "unique_senders": 2,
+      "unique_receivers": 2
+    },
+    "velocity_metrics": {
+      "rapid_outgoing_transfers": 0,
+      "rapid_outgoing_amount": 0.0,
+      "velocity_window_minutes": 30
+    },
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0659,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E003",
+    "label": "Rajesh Kumar Account",
+    "role": "unknown",
+    "controller_score": 0.233,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0165,
+    "pagerank": 0.078,
+    "account_risk_score": 0.1967,
+    "financial_metrics": {
+      "inflow": 50000.0,
+      "outflow": 5000.0,
+      "pass_through_ratio": 0.1,
+      "incoming_count": 1,
+      "outgoing_count": 1,
+      "unique_senders": 1,
+      "unique_receivers": 1
+    },
+    "velocity_metrics": {
+      "rapid_outgoing_transfers": 0,
+      "rapid_outgoing_amount": 0.0,
+      "velocity_window_minutes": 30
+    },
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.033,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E007",
+    "label": "Amit Sharma",
+    "role": "unknown",
+    "controller_score": 0.2311,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 1,
+    "digital_link_types": [
+      "same_ip"
+    ],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0625,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E008",
+    "label": "Rajesh Kumar",
+    "role": "unknown",
+    "controller_score": 0.2311,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 1,
+    "digital_link_types": [
+      "same_ip"
+    ],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0625,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E009",
+    "label": "Priya Patel",
+    "role": "unknown",
+    "controller_score": 0.2311,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 1,
+    "digital_link_types": [
+      "same_ip"
+    ],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0625,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E002",
+    "label": "Kirana Store Account",
+    "role": "unknown",
+    "controller_score": 0.2,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.1034,
+    "account_risk_score": 0.1667,
+    "financial_metrics": {
+      "inflow": 15000.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0.0,
+      "incoming_count": 1,
+      "outgoing_count": 0,
+      "unique_senders": 1,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {
+      "rapid_outgoing_transfers": 0,
+      "rapid_outgoing_amount": 0.0,
+      "velocity_window_minutes": 30
+    },
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E004",
+    "label": "Paytm-Vendor-99 Account",
+    "role": "unknown",
+    "controller_score": 0.2,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.1034,
+    "account_risk_score": 0.1667,
+    "financial_metrics": {
+      "inflow": 1250.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0.0,
+      "incoming_count": 1,
+      "outgoing_count": 0,
+      "unique_senders": 1,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {
+      "rapid_outgoing_transfers": 0,
+      "rapid_outgoing_amount": 0.0,
+      "velocity_window_minutes": 30
+    },
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E010",
+    "label": "103.241.12.45",
+    "role": "unknown",
+    "controller_score": 0.2,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.078,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E011",
+    "label": "115.240.99.12",
+    "role": "unknown",
+    "controller_score": 0.2,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.078,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E012",
+    "label": "117.200.45.89",
+    "role": "unknown",
+    "controller_score": 0.2,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.078,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.2
+    },
+    "network_controller_reasons": [
+      "Has high influence in the transaction network"
+    ]
+  },
+  {
+    "entity_id": "E005",
+    "label": "Priya Patel Account",
+    "role": "unknown",
+    "controller_score": 0.1686,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 50000.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 1,
+      "unique_senders": 0,
+      "unique_receivers": 1
+    },
+    "velocity_metrics": {
+      "rapid_outgoing_transfers": 0,
+      "rapid_outgoing_amount": 0.0,
+      "velocity_window_minutes": 30
+    },
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E006",
+    "label": "Unknown Sender Account",
+    "role": "unknown",
+    "controller_score": 0.1686,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 100000.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 1,
+      "unique_senders": 0,
+      "unique_receivers": 1
+    },
+    "velocity_metrics": {
+      "rapid_outgoing_transfers": 0,
+      "rapid_outgoing_amount": 0.0,
+      "velocity_window_minutes": 30
+    },
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E013",
+    "label": "CAM-01",
+    "role": "unknown",
+    "controller_score": 0.1686,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E014",
+    "label": "CAM-02",
+    "role": "unknown",
+    "controller_score": 0.1686,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  },
+  {
+    "entity_id": "E015",
+    "label": "CAM-03",
+    "role": "unknown",
+    "controller_score": 0.1686,
+    "connected_high_risk_accounts": 0,
+    "digital_link_count": 0,
+    "digital_link_types": [],
+    "betweenness": 0.0,
+    "pagerank": 0.0421,
+    "account_risk_score": 0.0,
+    "financial_metrics": {
+      "inflow": 0.0,
+      "outflow": 0.0,
+      "pass_through_ratio": 0,
+      "incoming_count": 0,
+      "outgoing_count": 0,
+      "unique_senders": 0,
+      "unique_receivers": 0
+    },
+    "velocity_metrics": {},
+    "score_components": {
+      "high_risk_connection_component": 0.0,
+      "digital_link_component": 0.0,
+      "betweenness_component": 0.0,
+      "pagerank_component": 0.1686
+    },
+    "network_controller_reasons": []
+  }
+]
