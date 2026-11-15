@@ -9,6 +9,7 @@ import streamlit as st
 import plotly.express as px
 from pyvis.network import Network
 from datetime import datetime
+from engine.graph_correlation import run_network_correlation_analysis
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(PROJECT_ROOT))
