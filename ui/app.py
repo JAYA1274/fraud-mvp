@@ -67,6 +67,11 @@ def render_transaction_review_page():
         st.info("Click **Load demo case** in the left sidebar or upload the required CSV files.")
         return
 
+    # FIX: Force all account numbers to be strings and strip spaces
+    entities["entity_id"] = entities["entity_id"].astype(str).str.strip()
+    transactions["to_acct"] = transactions["to_acct"].astype(str).str.strip()
+    transactions["from_acct"] = transactions["from_acct"].astype(str).str.strip()
+
     tab1, tab2, tab3, tab4 = st.tabs(["Overview", "Network", "Timeline", "Evidence"])
 
     with tab1:
@@ -75,16 +80,39 @@ def render_transaction_review_page():
         col1.metric("Entities", len(entities)); col2.metric("Transactions", len(transactions))
         col3.metric("Events", len(events)); col4.metric("Evidence links", len(links))
 
-        st.subheader("Suspicious account leads")
+        st.subheader("Suspicious account leads (Legacy CSV Data)")
         results = []
         for _, account in entities[entities["type"] == "account"].iterrows():
-            acc_id = account["entity_id"]
+            acc_id = str(account["entity_id"])
+            
+            # Now this will match perfectly
             incoming = transactions[transactions["to_acct"] == acc_id]
             outgoing = transactions[transactions["from_acct"] == acc_id]
+            
             inflow, outflow = incoming["amount"].sum(), outgoing["amount"].sum()
             unique_senders = incoming["from_acct"].nunique()
+            
+            # FIX: Adjusted logic so it calculates something even if they just send money
             score = min(unique_senders / 2, 1) * 0.40 + min(outflow / inflow if inflow else 0, 1) * 0.30 + min(len(incoming) / 2, 1) * 0.30
-            results.append({"Account": account["label"], "Mule score": round(score, 2), "Money received": inflow, "Money sent": outflow, "Reasons": f"Received from {unique_senders} sender(s)"})
+            
+            # If they are sending a lot of money but receiving nothing, they are still suspicious
+            if inflow == 0 and outflow > 0:
+                score = 0.50 
+
+            reasons = []
+            if unique_senders > 0: reasons.append(f"Received from {unique_senders} sender(s)")
+            if inflow > 0: reasons.append(f"Pass-through ratio: {outflow / inflow:.0%}")
+            if inflow == 0 and outflow > 0: reasons.append("Pure Sender (No incoming funds)")
+            if not reasons: reasons.append("No suspicious activity detected")
+
+            results.append({
+                "Account": account["label"], 
+                "Mule score": round(score, 2), 
+                "Money received": round(inflow, 2), 
+                "Money sent": round(outflow, 2), 
+                "Reasons": "; ".join(reasons)
+            })
+            
         scores = pd.DataFrame(results).sort_values("Mule score", ascending=False)
         st.dataframe(scores, use_container_width=True)
 
@@ -145,7 +173,6 @@ def render_transaction_review_page():
         if st.session_state["audit_log"]:
             st.write("### Audit log (Session)")
             st.dataframe(pd.DataFrame(st.session_state["audit_log"]), use_container_width=True)
-
 # ================================================================ Page 2 ======
 def _lazy_run_network_engine():
     try:
